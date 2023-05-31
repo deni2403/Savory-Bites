@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Ysabeau:ital,wght@1,200&display=swap');
+
+$color1 : burlywood;
+$color2 : #FFF8D6;
+$color3 : white;
+$color4 : black;
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color2;
+}
+
+#appbar {
+  width: 100%;
+
+  .logo-container {
+    background-color: $color1;
+    padding: 10px;
+
+    .skip {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      padding: 10px;
+      background-color: red;
+      text-decoration: none;
+      color: $color3;
+    }
+
+    .skip:focus {
+      position: static;
+      width: auto;
+      height: auto;
+    }
+
+
+    .logo-title {
+      display: block;
+      box-sizing: border-box;
+      font-size: 60px;
+      font-family: "Lora", sans-serif;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: $color3;
+      }
+    }
+  }
+
+  .header-menu {
+    font-size: 40px;
+    margin: 10px 45%;
+  }
+
+}
+
+.navbar {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: $color2;
+
+  .nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    .nav-item {
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: brown;
+      }
+
+      a:hover {
+        color: $color4;
+      }
+    }
+  }
+}
+
+.hero-section {
+  position: relative;
+  height: 400px;
+  width: 100%;
+ margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    padding: 20px;
+    background-color: $color3;
+    opacity: 60%;
+    font-family: "Ysabeau", sans-serif;
+    text-align: center;
+  }
+
+  .hero-title {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: $color4;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .hero-tagline {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: $color4;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 32px;
+}
+
+.searchBar {
+  min-width: 75px;
+  min-height: 44px;
+}
+
+.restaurants-not-found {
+  text-align: right;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.explore {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+
+  h3 {
+    font-size: 32px;
+    font-weight: lighter;
+  }
+
+  .rest-list {
+    margin: 32px auto auto;
+    text-align: left;
+
+    .rest-info {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: $color3;
+
+      #rest-thumbnail {
+        width: 100%;
+        height: 250px;
+      }
+
+      .rest-content {
+        padding: 16px;
+      }
+
+      .rest-rating {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: darkblue;
+      }
+
+      .rest-city {
+        font-weight: 500;
+      }
+
+      .rest-name {
+        font-weight: bold;
+        transition: 0.3s opacity;
+        min-height: 44px;
+        min-width: 44px;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 30px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          min-height: 44px;
+          min-width: 44px;
+        }
+      }
+
+      .rest-description {
+        margin-top: 16px;
+        font-size: 14px;
+        line-height: 1.5em;
+      }
+
+    }
+  }
+
+}
+
+.rest-name:hover {
+  opacity: 0.5;
+}
+
+#restaurant {
+  .restaurant-name {
+    font-size: 35px;
+  }
+
+  .restaurant-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.restaurant-info {
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.rest-menus {
+  display: flex;
+  justify-content: space-evenly;
+
+  h5 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+}
+
+.customer-reviews {
+  padding: 10px;
+  margin: 20px;
+
+  .list-reviews {
+    font-size: 20px;
+  }
+
+  .customer {
+    background-color: antiquewhite;
+    padding-left: 15px;
+
+    h5 {
+      font-size: 16px;
+      color: blue;
+    }
+
+    .review-comment {
+      font-size: 14px;
+    }
+
+    .review-date {
+      font-size: 10px;
+      color: gray;
+    }
+  }
+
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: $color1;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+}
