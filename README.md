@@ -1,5 +1,5 @@
 # Savory-Bites
-Restaurant Catalog using Progressive Web App (PWA)
+Restaurant Catalogue using Progressive Web App (PWA)
 
 # Live Demo :
 https://savory-bites-lite.netlify.app/
@@ -11,7 +11,7 @@ https://savory-bites-lite.netlify.app/
 - Webpack
 
 # API used :
-https://www.themealdb.com/api.php
+https://restaurant-api.dicoding.dev
 
 ## Instalation :
 ```bash
